@@ -11,6 +11,7 @@ module.exports = {
       },
       height: {
         '1': ['1px'],
+        '1.1': ['2px'],
       },
       backgroundColor: {
         purple_custom: '#872BFF',
@@ -20,8 +21,19 @@ module.exports = {
       },
       padding: {
         '3.5': '15px',
-        '7.5':'30px'
-      }
+        '7.5': '30px',
+        '20.5': '70px',
+      },
+      colors: {
+        'secondary': '#F311CF',
+      },
+      width: {
+        '1.5/12': '11.8%',
+        '3.5/12': '30%',
+      },
+      fontSize: {
+        '5.5xl': '44px'
+      },
     },
   },
   plugins: [],
