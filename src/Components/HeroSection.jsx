@@ -15,7 +15,12 @@ import pink_star from '../Assets/Images/svg/pink-star.svg'
 const HeroSection = () => {
 
     const [show, setShow] = useState(false);
-
+    if (show === true) {
+        document.body.classList.add("overflow-hidden");
+    }
+    else {
+        document.body.classList.remove("overflow-hidden");
+    }
 
     return (
         <div>

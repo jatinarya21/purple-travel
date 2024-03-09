@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         jakarta: ['Plus Jakarta Sans', 'sans - serif'],
-        inter: ['Inter', 'sans - serif']
+        inter: ['Inter', 'sans - serif'],
+        lato: ['Lato', 'sans - serif']
       },
       height: {
         '1': ['1px'],
@@ -26,6 +27,7 @@ module.exports = {
       },
       colors: {
         'secondary': '#F311CF',
+        'purple-custom': '#872BFF',
       },
       width: {
         '1.5/12': '11.8%',
