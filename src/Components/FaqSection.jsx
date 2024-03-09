@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import DottedAeroplane from '../Assets/Images/webp/Faq-dotted-aeroplane.webp'
+import PurpleStar from '../Assets/Images/svg/purple-star.svg'
 
 const FaqSection = ({ items }) => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -8,13 +10,16 @@ const FaqSection = ({ items }) => {
     };
 
     return (
-        <div className='py-[120px]'>
+        <div className='pb-12  xl:pb-52 relative '>
+            <img src={DottedAeroplane} width={258} height={67} className='absolute right-24 -top-10 w-[158px] md:w-[258px]' alt="DottedAeroplane" />
+            <img src={PurpleStar} className='absolute left-10 top-24' alt="Star" />
+            <img src={PurpleStar} className='absolute right-16 bottom-[33%]' alt="Star" />
             <div className="max-w-[940px] mx-auto px-3">
                 <h5 className='text-secondary font-jakarta font-bold text-xl text-center'>FAQ</h5>
-                <h3 className='font-jakarta font-bold text-black text-5.5xl text-center'>Still have any query?</h3>
+                <h3 className='font-jakarta font-bold text-black text-5.5xl text-center capitalize'>Still have any query?</h3>
                 <div className='mt-[25px]'>
                     {items.map((item, index) => (
-                        <div key={index} className="mb-4 rounded-3xl mt-6 p-6 " style={{
+                        <div key={index} className="mb-4 rounded-3xl mt-6 p-6 shadow-[0px_4px_16px_0px_#00000018] " style={{
                             background: openIndex === index ? 'linear-gradient(to bottom, #C82BFF, #660BDD)' : 'none',
                             color: openIndex === index ? '#fff' : '',
                         }}>

@@ -6,15 +6,18 @@ import ChooseUsBoatNearHouse from '../Assets/Images/webp/choose-us-boat-near-hou
 import ChooseUsCardEllipse from '../Assets/Images/webp/choose-us-ongoing-ellipse.png'
 import ChooseUsProgressBar from '../Assets/Images/webp/choose-us-progress-bar.webp'
 import ChooseUsHeart from '../Assets/Images/svg/Choose-us-heart.svg'
+import PinkStar from '../Assets/Images/svg/pink-star.svg'
+
 
 const WhyChooseUS = () => {
     return (
-        <div className='pb-[120px]'>
+        <div id='WhyChooseUs' className='pb-12 xl:pb-[120px] relative'>
+            <img className='absolute left-0 md:left-9 top-56 md:top-72' src={PinkStar} alt="Star" />
             <div className='container mx-auto px-3 lg:px-20.5'>
                 <div className="flex flex-wrap justify-center items-center lg:justify-between">
                     <div className="lg:w-5/12">
-                        <h2 className='text-secondary font-jakarta font-bold text-xl tracking-widest text-center'>Why Choose Us</h2>
-                        <p className='font-jakarta font-bold text-xl md:text-4xl lg:text-5.5xl pt-3.5 text-center'>Book Your Next Trip In 3 Easy  Steps</p>
+                        <h2 className='text-secondary font-jakarta font-bold text-xl tracking-widest text-center lg:text-start'>Why Choose Us</h2>
+                        <p className='font-jakarta font-bold text-xl md:text-4xl lg:text-5.5xl pt-3.5 text-center lg:text-start'>Book Your Next Trip In 3 Easy  Steps</p>
                         <div className='flex flex-col gap-6 pt-8'>
                             <div className='flex gap-[18px]'>
                                 <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsLocationIcon} alt="location-icon" />
@@ -32,7 +35,7 @@ const WhyChooseUS = () => {
 
                             </div>
                             <div className='flex gap-[18px]'>
-                                <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsAeroplaneIcon} alt="" />
+                                <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsAeroplaneIcon} alt="DottedAeroplane" />
                                 <div className='flex flex-col'>
                                     <h3 className='font-jakarta text-black font-bold text-lg md:text-2xl'>Reach Airport on Selected Date</h3>
                                     <p className='font-inter text-base font-normal text-black pr-2'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
@@ -42,7 +45,7 @@ const WhyChooseUS = () => {
                     </div>
                     <div className="lg:w-6/12 flex justify-center">
                         <div className='p-6 shadow-[0px_4px_16px_0px_#00000018] max-w-[412px]'>
-                            <img className='rounded-[18px]' src={ChooseUsBoatNearHouse} alt="" />
+                            <img className='rounded-[18px]' src={ChooseUsBoatNearHouse} alt="BoatNearHouse" />
                             <div className='relative pt-8'>
                                 <h3 className='font-jakarta text-black text-xl  font-bold'>Trip To Greece</h3>
                                 <p className='font-inter font-regular text-base'>14-29 June| by Robbin Jain</p>
@@ -91,17 +94,17 @@ const WhyChooseUS = () => {
                                         </span>
                                         <p className='font-inter text-black text-base'>24 people going</p>
                                     </div>
-                                    <img src={ChooseUsHeart} alt="" />
+                                    <img src={ChooseUsHeart} alt="HeartIcon" />
                                 </div>
                                 <div className='flex gap-2.5 items-center p-[17px] relative  top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
-                                    <img width={49} height={49} src={ChooseUsCardEllipse} alt="" />
+                                    <img width={49} height={49} src={ChooseUsCardEllipse} alt="ProfilePic" />
                                     <div className='flex flex-col'>
                                         <p className='font-inter font-normal text-xs text-black'>Ongoing</p>
                                         <h4 className='font-jakarta font-bold text-base text-black'>Trip To rome</h4>
 
                                         <div className='pt-4 '>
                                             <p className='font-inter font-normal text-base text-purple-custom'>40% <span className='text-black'>completed</span></p>
-                                            <img width={131} height={8} className='mt-1' src={ChooseUsProgressBar} alt="" />
+                                            <img width={131} height={8} className='mt-1' src={ChooseUsProgressBar} alt="ProgressBar" />
                                         </div>
                                     </div>
                                 </div>

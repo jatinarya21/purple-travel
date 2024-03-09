@@ -19,6 +19,8 @@ module.exports = {
       },
       backgroundImage: {
         'linear-gradient': 'linear-gradient(170.49deg, #C82BFF 7.17%, #660BDD 94.01%)',
+        'newsletter': "url('/src/Assets/Images/webp/Newsletter-background-image.webp')",
+        'footer': "url('/src/Assets/Images/webp/Footer-background-image.webp')"
       },
       padding: {
         '3.5': '15px',

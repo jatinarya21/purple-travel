@@ -24,13 +24,13 @@ function App() {
       <EasyAndFast />
       <TopDestinationSlider />
       <WhyChooseUS />
-      {/* <UpdatesSection /> */}
+      <UpdatesSection />
       <Testimonials />
       <OurExperience />
       {/* <FaqSection/> */}
       <AccordionItem />
       <FooterSection />
-      <SpecialOffersMailCard/>
+      {/* <SpecialOffersMailCard/> */}
     </div>
   );
 }

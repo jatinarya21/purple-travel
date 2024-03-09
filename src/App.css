@@ -23,7 +23,9 @@
   color: white;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 .testimonial-slider .slick-dots {
   bottom: -40px !important;
@@ -55,9 +57,8 @@
 .testimonial-slider .slick-dots li.slick-active button:before {
   opacity: 0 !important;
 }
-.accordion-item{
-  
-}
+
+.accordion-item {}
 
 @media (max-width:768px) {
   @keyframes slides {

@@ -6,6 +6,10 @@
   .nav-links {
     @apply font-jakarta text-base font-medium leading-5 pb-1 relative after:transition-all after:duration-500 after:absolute after:bottom-0 after:left-1 after:w-0 after:bg-linear-gradient after:h-1 after:rounded-3xl hover:after:w-5/6
   }
+
+  .footer-links {
+    @apply font-jakarta text-base text-white font-medium leading-5 pb-1 relative after:transition-all after:duration-500 after:absolute after:bottom-0 after:left-0 after:w-0 after:bg-white after:h-1 after:rounded-3xl hover:after:w-full
+  }
 }
 
 body {

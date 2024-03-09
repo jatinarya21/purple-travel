@@ -3,7 +3,8 @@ import Slider from 'react-slick';
 import video from '../Assets/videos/video-1.mp4';
 import london_thumbnail from '../Assets/Images/webp/top-destination-london-slider-image.webp';
 import play_btn from '../Assets/Images/webp/video-player-play-btn.png'
-import NextSliderBtn from '../Assets/Images/svg/pink-star.svg'
+import PinkStar from '../Assets/Images/svg/pink-star.svg'
+import PurpleStar from '../Assets/Images/svg/purple-star.svg'
 
 const TopDestinationSlider = () => {
     const [showPlayButton, setShowPlayButton] = useState(true);
@@ -58,62 +59,66 @@ const TopDestinationSlider = () => {
     };
 
     return (
-        <div className='container mx-auto px-8 lg:px-20.5 pb-[120px]'>
-            <div className='flex flex-col lg:flex-row flex-wrap justify-between items-center'>
-                <div className='lg:w-6/12  xl:w-5/12'>
-                    <h3 className='text-secondary font-jakarta font-bold text-lg sm:text-xl text-center lg:text-start'>TOP DESTINATION</h3>
-                    <h2 className='font-jakarta text-xl sm:text-3xl xl:text-5.5xl text-center lg:text-start'>Explore top destination</h2>
+        <div id='destinations' className='relative'>
+            <img src={PinkStar} className='absolute right-0 md:right-9 top-12' alt="Star" />
+            <img src={PurpleStar} className='absolute right-9 bottom-20' alt="Star" />
+            <div className='container mx-auto px-8 lg:px-20.5 pb-3 xl:pb-[120px]'>
+                <div className='flex flex-col lg:flex-row flex-wrap justify-between items-center'>
+                    <div className='lg:w-6/12  xl:w-5/12'>
+                        <h3 className='text-secondary font-jakarta font-bold text-lg sm:text-xl text-center lg:text-start'>TOP DESTINATION</h3>
+                        <h2 className='font-jakarta text-xl sm:text-3xl xl:text-5.5xl text-center lg:text-start'>Explore top destination</h2>
+                    </div>
+                    <div className='lg:w-6/12 xl:w-4/12'>
+                        <p className='font-inter text-sm sm:text-base font-normal py-2.5 md:pr-1 text-center lg:text-start'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor. Non eu arcu turpis molestie. Et integer eu malesuada quisque. </p>
+                    </div>
                 </div>
-                <div className='lg:w-6/12 xl:w-4/12'>
-                    <p className='font-inter text-sm sm:text-base font-normal py-2.5 md:pr-1 text-center lg:text-start'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor. Non eu arcu turpis molestie. Et integer eu malesuada quisque. </p>
-                </div>
+                <Slider {...settings} className='py-12  xl:pt-[57px]'>
+                    <div className='relative'>
+                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
+                            <source src={video} type='video/mp4' />
+                            Your browser does not support the video tag.
+                        </video>
+                        {showPlayButton && (
+                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
+                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
+                            </button>
+                        )}
+                    </div>
+                    <div className='relative'>
+                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
+                            <source src={video} type='video/mp4' />
+                            Your browser does not support the video tag.
+                        </video>
+                        {showPlayButton && (
+                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
+                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
+                            </button>
+                        )}
+                    </div>
+                    <div className='relative'>
+                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
+                            <source src={video} type='video/mp4' />
+                            Your browser does not support the video tag.
+                        </video>
+                        {showPlayButton && (
+                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
+                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
+                            </button>
+                        )}
+                    </div>
+                    <div className='relative'>
+                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
+                            <source src={video} type='video/mp4' />
+                            Your browser does not support the video tag.
+                        </video>
+                        {showPlayButton && (
+                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
+                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
+                            </button>
+                        )}
+                    </div>
+                </Slider>
             </div>
-            <Slider {...settings} className='py-12  lg:pt-[57px]'>
-                <div className='relative'>
-                    <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
-                        <source src={video} type='video/mp4' />
-                        Your browser does not support the video tag.
-                    </video>
-                    {showPlayButton && (
-                        <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                            <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="" />
-                        </button>
-                    )}
-                </div>
-                <div className='relative'>
-                    <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
-                        <source src={video} type='video/mp4' />
-                        Your browser does not support the video tag.
-                    </video>
-                    {showPlayButton && (
-                        <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                            <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="" />
-                        </button>
-                    )}
-                </div>
-                <div className='relative'>
-                    <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
-                        <source src={video} type='video/mp4' />
-                        Your browser does not support the video tag.
-                    </video>
-                    {showPlayButton && (
-                        <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                            <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="" />
-                        </button>
-                    )}
-                </div>
-                <div className='relative'>
-                    <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
-                        <source src={video} type='video/mp4' />
-                        Your browser does not support the video tag.
-                    </video>
-                    {showPlayButton && (
-                        <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                            <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
-                        </button>
-                    )}
-                </div>
-            </Slider>
         </div>
     );
 };

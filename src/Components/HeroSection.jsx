@@ -33,12 +33,12 @@ const HeroSection = () => {
                     </a>
                     {/* nav links */}
                     <ul className={`${show ? "left-0" : ""} flex flex-col items-center justify-center z-10 w-full bg-white text-black fixed top-0 -left-full min-h-screen  gap-6 transition-all duration-500 md:flex-row md:bg-inherit md:text-black md:static md:w-auto md:min-h-full `}>
-                        <li><a className='nav-links' href="#">Home</a></li>
-                        <li><a className='nav-links' href="#">Destinations</a></li>
-                        <li><a className='nav-links' href="#">Why choose us</a></li>
-                        <li><a className='nav-links' href="#">Blog</a></li>
-                        <li><a className='nav-links' href="#">Testimonials</a></li>
-                        <a className='font-jakarta font-bold text-base leading-5 py-3.5 px-7.5 bg-purple_custom rounded-3xl text-white lg:hidden' href="#">Sign Up</a>
+                        <li><a className='nav-links' onClick={() => setShow(!show)} href="#home">Home</a></li>
+                        <li><a className='nav-links' onClick={() => setShow(!show)} href="#destinations">Destinations</a></li>
+                        <li><a className='nav-links' onClick={() => setShow(!show)} href="#WhyChooseUs">Why choose us</a></li>
+                        <li><a className='nav-links' onClick={() => setShow(!show)} href="#blog">Blog</a></li>
+                        <li><a className='nav-links' onClick={() => setShow(!show)} href="#testimonials">Testimonials</a></li>
+                        <a className='font-jakarta font-bold text-base leading-5 py-3.5 px-7.5 bg-purple_custom border-2 transition-all border-purple-700  hover:bg-transparent hover:text-purple-700 rounded-3xl text-white lg:hidden' href="#">Sign Up</a>
                     </ul>
                     {/* nav bar button */}
                     <a onClick={() => setShow(!show)} className='z-10  md:hidden ' href="#">{show ? <div className=''>
@@ -47,19 +47,19 @@ const HeroSection = () => {
                     </div> : <div> <span className='bg-black h-1 w-6 flex mt-1 transition-all' ></span>
                         <span className='bg-black h-1.1 w-6  flex mt-1 transition-all' ></span>
                         <span className='bg-black h-1.1 w-6  flex mt-1 transition-all' ></span></div>}</a>
-                    <a className='font-jakarta font-bold text-base leading-5 py-3.5 px-7.5 bg-purple_custom rounded-3xl text-white hidden lg:block' href="#">Sign Up</a>
+                    <a className='font-jakarta font-bold text-base leading-5 py-3.5 px-7.5 bg-purple_custom border-2 transition-all border-purple-700 rounded-3xl text-white hidden lg:block hover:bg-transparent hover:text-purple-700' href="#">Sign Up</a>
                 </div>
             </nav>
             {/* hero section */}
-            <div className='pt-9'>
+            <div id='home' className='pt-9'>
                 <div className=" container mx-auto px-3 relative">
-                    <img src={aeroplane_with_dotted_lines} className='absolute -right-2  -top-8 sm:right-10 lg:right-16 xl:right-24 sm:-top-12 w-[170px] md:w-[220px] lg:w-[310px]' width={310} height={138} alt="aeroplane-with-dotted-lines" />
+                    <img src={aeroplane_with_dotted_lines} className='absolute -right-0 -top-8 sm:right-10 lg:right-16 xl:right-24 sm:-top-12 w-[170px] md:w-[220px] lg:w-[310px]' width={310} height={138} alt="aeroplane-with-dotted-lines" />
                     <div className='flex  justify-center '>
                         <h1 className='font-jakarta font-bold text-xl sm:text-3xl md:text-4xl lg:text-6xl text-center  w-[80%] sm:w-[50%] lg:w-[60%] xl:w-[50%]'>From Southeast Asia <span className='text-secondary'>To The World</span></h1>
                     </div>
                     <div className="flex flex-wrap gap-5 xl:gap-0 justify-center items-center pt-12 relative">
-                        <img src={purple_star} className='absolute right-0 top-5 2xl:right-5' alt="" />
-                        <img src={pink_star} className='absolute -left-9 2xl:left-0 bottom-10' alt="" />
+                        <img src={purple_star} className='absolute right-0 top-0 sm:top-5 2xl:right-5' alt="Star" />
+                        <img src={pink_star} className='absolute -left-2 md:-left-9 2xl:left-0 bottom-10' alt="Star" />
 
                         <div className='w-5/12 sm:w-3/12 md:w-1.5/12 xl:w-2/12 flex justify-end'>
                             <img width={171} height={186} className='rounded-lg' src={hero_mountain_img} alt="mountains-img" />

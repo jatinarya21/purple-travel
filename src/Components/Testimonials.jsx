@@ -4,6 +4,7 @@ import TestimonialStars from '../Assets/Images/webp/Testimonials-stars.webp'
 import TestimonialJefrryMartin from '../Assets/Images/webp/Testimonials-jeffry-martin-profile.webp'
 import TestimonialDrewSugarman from '../Assets/Images/webp/Testimonials-Drew-Sugarman-profile.webp'
 import TestimonialJamesCart from '../Assets/Images/webp/Testimonials-james-cartprofile.webp'
+import PurpleStar from '../Assets/Images/svg/purple-star.svg'
 
 const Testimonials = () => {
 
@@ -46,7 +47,8 @@ const Testimonials = () => {
 
 
     return (
-        <div className='py-[120px]'>
+        <div id='testimonials' className='pb-16 pt-12 xl:py-[120px] relative'>
+            <img className='absolute right-10 top-36' src={PurpleStar} alt="RatingStars" />
             <div className="container mx-auto px-3 lg:px-20.5">
                 <h3 className='text-secondary font-jakarta text-xl font-bold tracking-widest text-center'>Testimonials</h3>
                 <p className='text-center text-black font-jakarta font-bold text-xl md:text-5.5xl mt-3.5'>What People Say About Us</p>
@@ -54,60 +56,60 @@ const Testimonials = () => {
                     <Slider  {...settings}>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] p-5 testimonial-box'>
-                                <img width={93} src={TestimonialStars} alt="" />
+                                <img width={93} src={TestimonialStars} alt="RatingStars" />
                                 <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
-                                    <img width={54} height={54} src={TestimonialDrewSugarman} alt="" />
+                                    <img width={54} height={54} src={TestimonialDrewSugarman} alt="UserProfile" />
                                     <p>Drew Sugarman</p>
                                 </span>
                             </div>
                         </div>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] p-5 testimonial-box'>
-                                <img width={93} src={TestimonialStars} alt="" />
+                                <img width={93} src={TestimonialStars} alt="RatingStars" />
                                 <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
-                                    <img width={54} height={54} src={TestimonialJamesCart} alt="" />
+                                    <img width={54} height={54} src={TestimonialJamesCart} alt="UserProfile" />
                                     <p>James Cart</p>
                                 </span>
                             </div>
                         </div>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] p-5 testimonial-box'>
-                                <img width={93} src={TestimonialStars} alt="" />
+                                <img width={93} src={TestimonialStars} alt="RatingStars" />
                                 <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
-                                    <img width={54} height={54} src={TestimonialJefrryMartin} alt="" />
+                                    <img width={54} height={54} src={TestimonialJefrryMartin} alt="UserProfile" />
                                     <p>Jeffrey Martin</p>
                                 </span>
                             </div>
                         </div>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] p-5 testimonial-box'>
-                                <img width={93} src={TestimonialStars} alt="" />
+                                <img width={93} src={TestimonialStars} alt="RatingStars" />
                                 <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
-                                    <img width={54} height={54} src={TestimonialDrewSugarman} alt="" />
+                                    <img width={54} height={54} src={TestimonialDrewSugarman} alt="UserProfile" />
                                     <p>Drew Sugarman</p>
                                 </span>
                             </div>
                         </div>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] p-5 testimonial-box'>
-                                <img width={93} src={TestimonialStars} alt="" />
+                                <img width={93} src={TestimonialStars} alt="RatingStars" />
                                 <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
-                                    <img width={54} height={54} src={TestimonialJamesCart} alt="" />
+                                    <img width={54} height={54} src={TestimonialJamesCart} alt="UserProfile" />
                                     <p>James Cart</p>
                                 </span>
                             </div>
                         </div>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] p-5 testimonial-box'>
-                                <img width={93} src={TestimonialStars} alt="" />
+                                <img width={93} src={TestimonialStars} alt="RatingStars" />
                                 <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
-                                    <img width={54} height={54} src={TestimonialJefrryMartin} alt="" />
+                                    <img width={54} height={54} src={TestimonialJefrryMartin} alt="UserProfile" />
                                     <p>Jeffrey Martin</p>
                                 </span>
                             </div>
