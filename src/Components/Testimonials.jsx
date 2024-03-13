@@ -54,7 +54,7 @@ const Testimonials = () => {
                 <div className='testimonial-slider mt-[52px]'>
                     <Slider  {...settings}>
                         <div >
-                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] h-[350px] p-5 testimonial-box'>
+                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
                                 <p className='font-inter italic text-base mt-3.5 '>"I'm always looking for the next technological advance. When I found this I had my concerns but had to at least try it out. I'm pleasantly surprised and had an almost immediate ROI. Planning on shifting a lot of my operations over to this."</p>
                                 <span className='flex items-center gap-3.5 mt-[58px]'>
@@ -64,7 +64,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div >
-                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] h-[350px] p-5 testimonial-box'>
+                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
                                 <p className='font-inter italic text-base mt-3.5 '>"This is going to change the insurance industry. The amount of time we are saving by not having to book these appointments is mind blowing. Now my guys are just sitting down for qualified appointments instead of having to book all of their own. Complete game changer."</p>
                                 <span className='flex items-center gap-3.5 mt-[48px]'>
@@ -74,7 +74,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div >
-                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] h-[350px] p-5 testimonial-box'>
+                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3x -w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
                                 <p className='font-inter italic text-base mt-3.5 '>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 pt-[88px]'>
@@ -84,7 +84,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div >
-                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] h-[350px] p-5 testimonial-box'>
+                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
                                 <p className='font-inter italic text-base mt-3.5 '>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
@@ -94,7 +94,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div >
-                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] h-[350px] p-5 testimonial-box'>
+                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
                                 <p className='font-inter italic text-base mt-3.5 '>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 mt-[78px]'>
@@ -104,9 +104,9 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div >
-                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl max-w-[364px] h-[350px] p-5 testimonial-box'>
+                            <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
-                                <p className='font-inter italic text-base mt-3.5 pr-7'>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
+                                <p className='font-inter italic text-base mt-3.5 '>"I can't believe this technology actually exists. I've been hesitant with anything AI since it's all been a gimmick so far. This actually works. It calls my leads right away and converts better than my old setters."</p>
                                 <span className='flex items-center gap-3.5 pt-[50px]'>
                                     <img width={54} height={54} src={TestimonialJefrryMartin} alt="UserProfile" />
                                     <p>Jeffrey Martin</p>
