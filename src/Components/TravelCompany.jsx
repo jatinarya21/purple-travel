@@ -1,6 +1,6 @@
 import React from 'react'
 import traveloka_company from '../Assets/Images/webp/traveloka-company.webp'
-import tiket_com from '../Assets/Images/webp/tiket.com.png'
+import tiket_com from '../Assets/Images/webp/tiket.com.webp'
 import booking_company from '../Assets/Images/webp/Booking-company.webp'
 import trip_advisor from '../Assets/Images/webp/Tripadvisor.webp'
 import airbnb_company from '../Assets/Images/webp/Airbnb-company.webp'

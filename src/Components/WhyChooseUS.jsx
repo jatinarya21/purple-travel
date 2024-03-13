@@ -3,7 +3,7 @@ import ChooseUsLocationIcon from '../Assets/Images/webp/choose-us-location-icon.
 import ChooseUsCreditCardIcon from '../Assets/Images/webp/choose-us-creditcard-icon.webp'
 import ChooseUsAeroplaneIcon from '../Assets/Images/webp/choose-us-aeroplane-icon.webp'
 import ChooseUsBoatNearHouse from '../Assets/Images/webp/choose-us-boat-near-house.webp'
-import ChooseUsCardEllipse from '../Assets/Images/webp/choose-us-ongoing-ellipse.png'
+import ChooseUsCardEllipse from '../Assets/Images/webp/choose-us-ongoing-ellipse.webp'
 import { ChooseUsCardHeart, ChooseUsCardLeaf, ChooseUsCardLocation, ChooseUsCardSend, ChooseUsProgressbars, PinkStar } from './common/Icons'
 
 

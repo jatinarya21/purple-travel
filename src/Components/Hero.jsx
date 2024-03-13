@@ -75,7 +75,7 @@ const HeroSection = () => {
                             </div>
                         </div>
                         <div className='w-5/12 sm:w-3/12 md:w-3.5/12 xl:w-4/12 relative flex justify-center'>
-                            <div className='bg-[#872BFF] rounded-full absolute -top-8 left-0  2xl:-top-8   2xl:left-10 overflow-hidden'>
+                            <div className='bg-[#872BFF] rounded-full absolute -top-8 left-0   2xl:-top-8   2xl:left-5 overflow-hidden'>
                                 <span className='absolute z-5 left-[26px] top-[15px] sm:left-[37px]  sm:top-[37px]'><svg className='w-[17px]  sm:w-[26px]' width="26" height="30" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.6639 2.52417C14.6639 1.59607 13.9116 0.843697 12.9835 0.843697C12.0554 0.843697 11.303 1.59607 11.303 2.52417L14.6639 2.52417ZM11.7952 37.934C12.4515 38.5903 13.5155 38.5903 14.1717 37.934L24.8662 27.2396C25.5225 26.5833 25.5225 25.5193 24.8662 24.863C24.2099 24.2067 23.1459 24.2067 22.4896 24.863L12.9835 34.3692L3.47727 24.863C2.82101 24.2068 1.75699 24.2068 1.10073 24.863C0.44446 25.5193 0.44446 26.5833 1.10073 27.2396L11.7952 37.934ZM11.303 2.52417L11.303 36.7458L14.6639 36.7458L14.6639 2.52417L11.303 2.52417Z" fill="#FFFEFE" />
                                 </svg>
