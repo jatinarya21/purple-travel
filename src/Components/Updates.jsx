@@ -3,21 +3,21 @@ import UpdatesMountainRiver from '../Assets/Images/webp/updates-mountain-river.w
 import UpdatesTreeSun from '../Assets/Images/webp/updates-tree-sun.webp'
 import UpdatesBeachCity from '../Assets/Images/webp/updates-beach-city.webp'
 import UpdatesMountainRiverSun from '../Assets/Images/webp/updates-mountain-river-sun.webp'
-import DottedAeroplane from '../Assets/Images/webp/updates-dotted-aeroplane.webp'
-import PinkStar from '../Assets/Images/svg/pink-star.svg'
-import PurpleStar from '../Assets/Images/svg/purple-star.svg'
+import { PinkStar, PurpleStar, UpdatesAeroplane } from './common/Icons'
 
 
 const UpdatesSection = () => {
     return (
         <div id='blog' className='relative'>
-            <img className='absolute -top-5  md:left-14 md:-top-16 w-[150px] md:w-[310px]' width={310} height={138} src={DottedAeroplane} alt="" />
-            <img className='absolute right-12 top-20' src={PinkStar} alt="Star" />
-            <img className='absolute left-12 bottom-20' src={PurpleStar} alt="Star" />
+            <span className='absolute -top-20 sm:-top-10  md:left-16 md:-top-10 '>
+                <UpdatesAeroplane />
+            </span>
+            <span className='absolute right-12 top-20'><PinkStar /></span>
+            <span className='absolute left-12 bottom-20'><PurpleStar /></span>
 
-            <div className="container mx-auto px-3 lg:px-20.5">
+            <div className="container mx-auto px-3 lg:px-20.5 2xl:px-44">
                 <div className='flex flex-col items-center'>
-                    <h2 className='font-jakarta text-secondary text-xl uppercase mb-3.5 font-bold  tracking-widest'>Updates</h2>
+                    <h2 className='font-jakarta text-secondary text-xl uppercase mb-3.5 font-bold  tracking-[5px]'>Updates</h2>
                     <p className='text-black font-jakarta xl:!leading-[55.5px] font-bold text-base sm:text-3xl sm:w-[70%] md:w-[60%] lg:text-4xl xl:text-5.5xl lg:w-[43%] text-center '>Read Our Latest Travel Blog & Tips Here</p>
                 </div>
                 <div className='flex flex-wrap justify-center items-center pt-5 md:pt-[52px] gap-0 lg:gap-6'>

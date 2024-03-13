@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqSection from '../FaqSection';
+import FaqSection from '../Faq';
 
 const AccordionItem = () => {
     const accordionItems = [

@@ -4,8 +4,7 @@ import videos from '../Assets/videos/video-1.mp4';
 import london_thumbnail from '../Assets/Images/webp/top-destination-london-slider-image.webp';
 import pause_btn from '../Assets/Images/webp/pause-button-top-destination.png';
 import play_btn from '../Assets/Images/webp/video-player-play-btn.png'
-import PinkStar from '../Assets/Images/svg/pink-star.svg'
-import PurpleStar from '../Assets/Images/svg/purple-star.svg'
+import { PurpleStar, PinkStar } from './common/Icons';
 
 const TopDestinationSlider = () => {
     const [showPlayButton, setShowPlayButton] = useState(true);
@@ -62,16 +61,20 @@ const TopDestinationSlider = () => {
 
     return (
         <div id='destinations' className='relative pt-6 md:pt-0'>
-            <img src={PinkStar} className='absolute right-0 md:right-9 top-12' alt="Star" />
-            <img src={PurpleStar} className='absolute right-9 bottom-20' alt="Star" />
-            <div className='container mx-auto px-8 lg:px-20.5 pb-3 xl:pb-[120px]'>
+            <span className='absolute right-9 bottom-20'>
+                <PurpleStar />
+            </span>
+            <span className='absolute right-0 md:right-9 top-12'>
+                <PinkStar />
+            </span>
+            <div className='container mx-auto px-8 lg:px-18 2xl:px-44  pb-3 xl:pb-[120px]'>
                 <div className='flex flex-col lg:flex-row flex-wrap justify-between items-center'>
                     <div className='lg:w-6/12  xl:w-[48%]'>
-                        <h3 className='text-secondary font-jakarta font-bold tracking-widest text-lg sm:text-xl text-center lg:text-start mb-3.5'>TOP DESTINATION</h3>
+                        <h3 className='text-secondary font-jakarta font-bold tracking-[4px] text-lg sm:text-xl text-center lg:text-start mb-3.5'>TOP DESTINATION</h3>
                         <h2 className='font-jakarta font-bold text-xl sm:text-3xl xl:text-5.5xl text-center lg:text-start capitalize'>Explore top destination</h2>
                     </div>
-                    <div className='lg:w-6/12 xl:w-4/12'>
-                        <p className='font-inter text-sm sm:text-base font-normal py-2.5 md:pr-1 text-center lg:text-start'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor. Non eu arcu turpis molestie. Et integer eu malesuada quisque. </p>
+                    <div className='lg:w-6/12 xl:w-5/12'>
+                        <p className='font-inter text-sm sm:text-base font-normal py-2.5 md:pr-20 text-center lg:text-start'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor. Non eu arcu turpis molestie. Et integer eu malesuada quisque. </p>
                     </div>
                 </div>
                 <Slider {...settings} className='py-5 md:py-12  xl:pt-[57px]'>

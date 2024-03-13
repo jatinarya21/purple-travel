@@ -14,12 +14,12 @@ div::-webkit-scrollbar {
 }
 
 .slick-prev {
-  left: -60px !important;
+  left: -80px !important;
   top: 47% !important;
 }
 
 .slick-next {
-  right: -35px !important;
+  right: -45px !important;
   top: 47% !important;
 }
 
@@ -77,7 +77,7 @@ html {
 
 #rotatingText {
   animation-name: rotate-circle;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -89,6 +89,30 @@ html {
 }
 
 
+
+
+
+
+
+@media (max-width:1900px) {
+  .slick-next {
+    right: -25px !important;
+  }
+
+  .slick-prev {
+    left: -55px !important;
+  }
+}
+
+@media (max-width:1500px) {
+  .slick-next {
+    right: -40px !important;
+  }
+
+  .slick-prev {
+    left: -70px !important;
+  }
+}
 @media (max-width:768px) {
   @keyframes slides {
     0% {

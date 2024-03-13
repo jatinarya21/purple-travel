@@ -4,20 +4,20 @@ import ChooseUsCreditCardIcon from '../Assets/Images/webp/choose-us-creditcard-i
 import ChooseUsAeroplaneIcon from '../Assets/Images/webp/choose-us-aeroplane-icon.webp'
 import ChooseUsBoatNearHouse from '../Assets/Images/webp/choose-us-boat-near-house.webp'
 import ChooseUsCardEllipse from '../Assets/Images/webp/choose-us-ongoing-ellipse.png'
-import ChooseUsProgressBar from '../Assets/Images/webp/choose-us-progress-bar.webp'
-import ChooseUsHeart from '../Assets/Images/svg/Choose-us-heart.svg'
-import PinkStar from '../Assets/Images/svg/pink-star.svg'
+import { ChooseUsCardHeart, ChooseUsCardLeaf, ChooseUsCardLocation, ChooseUsCardSend, ChooseUsProgressbars, PinkStar } from './common/Icons'
 
 
 const WhyChooseUS = () => {
     return (
         <div id='WhyChooseUs' className='pb-12 xl:pb-[120px] relative'>
-            <img className='absolute left-0  top-56 md:top-72 md:left-9' src={PinkStar} alt="Star" />
-            <div className='container mx-auto px-3 lg:px-20.5'>
+            <span className='absolute left-0  top-56 md:top-72 md:left-3'>
+                <PinkStar />
+            </span>
+            <div className='container mx-auto px-3 lg:px-20.5 2xl:px-44'>
                 <div className="flex flex-wrap justify-center items-center lg:justify-between">
                     <div className="lg:w-5/12">
-                        <h2 className='text-secondary font-jakarta font-bold text-xl uppercase  tracking-widest text-center lg:text-start'>Why Choose Us</h2>
-                        <p className='font-jakarta font-bold text-xl md:text-4xl  xl:text-5.5xl pt-1 md:pt-3.5 text-center lg:text-start'>Book Your Next Trip In 3 Easy  Steps</p>
+                        <h2 className='text-secondary font-jakarta font-bold text-xl uppercase  tracking-[5px] text-center lg:text-start'>Why Choose Us</h2>
+                        <p className='font-jakarta font-bold text-xl md:text-4xl !leading-[55.4px]  xl:text-5.5xl pt-1 md:pt-3.5 text-center lg:text-start'>Book Your Next Trip In 3 Easy  Steps</p>
                         <div className='flex flex-col gap-6 pt-2  md:pt-8'>
                             <div className='flex gap-[18px]'>
                                 <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsLocationIcon} alt="location-icon" />
@@ -51,33 +51,13 @@ const WhyChooseUS = () => {
                                 <p className='font-inter font-regular text-base'>14-29 June| by Robbin Jain</p>
                                 <div className='flex gap-1 pt-3.5 pb-8'>
                                     <a href='#'>
-                                        <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect y="0.75" width="31" height="31" rx="15.5" fill="#F6EFFF" />
-                                            <g opacity="0.5">
-                                                <path d="M19.459 13.0833C12.334 14.6667 10.6715 19.5513 9.02482 23.6442L10.5211 24.1667L11.2732 22.3458C11.6532 22.4804 12.049 22.5833 12.334 22.5833C21.0423 22.5833 23.4173 9.125 23.4173 9.125C22.6257 10.7083 17.084 10.9062 13.1257 11.6979C9.16732 12.4896 7.58398 15.8542 7.58398 17.4375C7.58398 19.0208 8.9694 20.4062 8.9694 20.4062C11.5423 13.0833 19.459 13.0833 19.459 13.0833Z" fill="#6A14DA" />
-                                            </g>
-                                        </svg>
+                                        <ChooseUsCardLeaf />
                                     </a>
                                     <a href='#'>
-                                        <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect y="0.75" width="31" height="31" rx="15.5" fill="#F6EFFF" />
-                                            <g opacity="0.5" clip-path="url(#clip0_105_2003)">
-                                                <path d="M24.2346 10.4361C24.6666 9.24109 23.5086 8.08309 22.3136 8.51609L7.70855 13.7981C6.50955 14.2321 6.36455 15.8681 7.46755 16.5071L12.1296 19.2061L16.2926 15.0431C16.4812 14.8609 16.7338 14.7601 16.996 14.7624C17.2582 14.7647 17.509 14.8699 17.6944 15.0553C17.8798 15.2407 17.9849 15.4915 17.9872 15.7537C17.9895 16.0159 17.8887 16.2685 17.7066 16.4571L13.5436 20.6201L16.2436 25.2821C16.8816 26.3851 18.5176 26.2391 18.9516 25.0411L24.2346 10.4361Z" fill="#6A14DA" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_105_2003">
-                                                    <rect width="24" height="24" fill="white" transform="translate(4 4.75)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
+                                        <ChooseUsCardSend />
                                     </a>
                                     <a href='#'>
-                                        <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect y="0.75" width="31" height="31" rx="15.5" fill="#F6EFFF" />
-                                            <g opacity="0.5">
-                                                <path d="M16 16.25C15.337 16.25 14.7011 15.9866 14.2322 15.5178C13.7634 15.0489 13.5 14.413 13.5 13.75C13.5 13.087 13.7634 12.4511 14.2322 11.9822C14.7011 11.5134 15.337 11.25 16 11.25C16.663 11.25 17.2989 11.5134 17.7678 11.9822C18.2366 12.4511 18.5 13.087 18.5 13.75C18.5 14.0783 18.4353 14.4034 18.3097 14.7067C18.1841 15.01 17.9999 15.2856 17.7678 15.5178C17.5356 15.7499 17.26 15.9341 16.9567 16.0597C16.6534 16.1853 16.3283 16.25 16 16.25ZM16 6.75C14.1435 6.75 12.363 7.4875 11.0503 8.80025C9.7375 10.113 9 11.8935 9 13.75C9 19 16 26.75 16 26.75C16 26.75 23 19 23 13.75C23 11.8935 22.2625 10.113 20.9497 8.80025C19.637 7.4875 17.8565 6.75 16 6.75Z" fill="#6A14DA" />
-                                            </g>
-                                        </svg>
+                                        <ChooseUsCardLocation />
                                     </a>
                                 </div>
                                 <div className='flex items-center justify-between'>
@@ -94,17 +74,19 @@ const WhyChooseUS = () => {
                                         </span>
                                         <p className='font-inter text-black text-base'>24 people going</p>
                                     </div>
-                                    <img src={ChooseUsHeart} alt="HeartIcon" />
+                                    <ChooseUsCardHeart />
                                 </div>
-                                <div className='flex gap-2.5 items-center p-[17px] relative  top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
+                                <div className='flex gap-2.5 items-center p-[17px] relative mt-6 top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
                                     <img width={49} height={49} src={ChooseUsCardEllipse} alt="ProfilePic" />
                                     <div className='flex flex-col'>
                                         <p className='font-inter font-normal text-xs text-black'>Ongoing</p>
                                         <h4 className='font-jakarta font-bold text-base text-black'>Trip To rome</h4>
 
                                         <div className='pt-4 '>
-                                            <p className='font-inter font-normal text-base text-purple-custom'>40% <span className='text-black'>completed</span></p>
-                                            <img width={131} height={8} className='mt-1' src={ChooseUsProgressBar} alt="ProgressBar" />
+                                            <p className='font-inter font-normal text-base text-purple-custom'>40% <span className='text-black pb-1'>completed</span></p>
+                                            <span className=''>
+                                                <ChooseUsProgressbars />
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
