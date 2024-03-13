@@ -76,7 +76,7 @@ const WhyChooseUS = () => {
                                     </div>
                                     <ChooseUsCardHeart />
                                 </div>
-                                <div className='flex gap-2.5 items-center p-[17px] relative mt-6 top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
+                                <div className='flex gap-2.5 rounded-xl items-center p-[17px] relative mt-6 top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
                                     <img width={49} height={49} src={ChooseUsCardEllipse} alt="ProfilePic" />
                                     <div className='flex flex-col'>
                                         <p className='font-inter font-normal text-xs text-black'>Ongoing</p>
