@@ -12,13 +12,13 @@ import PinkStar from '../Assets/Images/svg/pink-star.svg'
 const WhyChooseUS = () => {
     return (
         <div id='WhyChooseUs' className='pb-12 xl:pb-[120px] relative'>
-            <img className='absolute left-0 md:left-9 top-56 md:top-72' src={PinkStar} alt="Star" />
+            <img className='absolute left-0  top-56 md:top-72 md:left-9' src={PinkStar} alt="Star" />
             <div className='container mx-auto px-3 lg:px-20.5'>
                 <div className="flex flex-wrap justify-center items-center lg:justify-between">
                     <div className="lg:w-5/12">
-                        <h2 className='text-secondary font-jakarta font-bold text-xl tracking-widest text-center lg:text-start'>Why Choose Us</h2>
-                        <p className='font-jakarta font-bold text-xl md:text-4xl lg:text-5.5xl pt-3.5 text-center lg:text-start'>Book Your Next Trip In 3 Easy  Steps</p>
-                        <div className='flex flex-col gap-6 pt-8'>
+                        <h2 className='text-secondary font-jakarta font-bold text-xl uppercase  tracking-widest text-center lg:text-start'>Why Choose Us</h2>
+                        <p className='font-jakarta font-bold text-xl md:text-4xl  xl:text-5.5xl pt-1 md:pt-3.5 text-center lg:text-start'>Book Your Next Trip In 3 Easy  Steps</p>
+                        <div className='flex flex-col gap-6 pt-2  md:pt-8'>
                             <div className='flex gap-[18px]'>
                                 <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsLocationIcon} alt="location-icon" />
                                 <div className='flex flex-col'>
