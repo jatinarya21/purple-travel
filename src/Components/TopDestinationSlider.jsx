@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import videos from '../Assets/videos/video-1.mp4';
 import london_thumbnail from '../Assets/Images/webp/top-destination-london-slider-image.webp';
+import pause_btn from '../Assets/Images/webp/pause-button-top-destination.png';
 import play_btn from '../Assets/Images/webp/video-player-play-btn.png'
 import PinkStar from '../Assets/Images/svg/pink-star.svg'
 import PurpleStar from '../Assets/Images/svg/purple-star.svg'
@@ -13,14 +14,15 @@ const TopDestinationSlider = () => {
         setShowPlayButton(!showPlayButton);
     };
 
-    const playVideo = () => {
-        const videoPlayer = document.getElementById('videoPlayer');
+    const playVideo = (videoId) => {
+        const videoPlayer = document.getElementById(videoId);
         if (videoPlayer.paused) {
             videoPlayer.play();
         } else {
             videoPlayer.pause();
         }
     };
+
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -74,49 +76,28 @@ const TopDestinationSlider = () => {
                 </div>
                 <Slider {...settings} className='py-5 md:py-12  xl:pt-[57px]'>
                     <div className='relative'>
-                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
+                        <video id='videoPlayer1' poster={london_thumbnail} className='rounded-3xl w-full' controls={true}>
                             <source src={videos} type='video/mp4' />
                             Your browser does not support the video tag.
                         </video>
                         {showPlayButton && (
-                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
+                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={() => playVideo('videoPlayer1')}>
+                                {showPlayButton ? (<img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />) : (<img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={pause_btn} alt="video-player-btn" />)}
                             </button>
                         )}
                     </div>
                     <div className='relative'>
-                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
+                        <video id='videoPlayer2' poster={london_thumbnail} className='rounded-3xl w-full' controls={true}>
                             <source src={videos} type='video/mp4' />
                             Your browser does not support the video tag.
                         </video>
                         {showPlayButton && (
-                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
+                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={() => playVideo('videoPlayer2')}>
                                 <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
                             </button>
                         )}
                     </div>
-                    <div className='relative'>
-                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
-                            <source src={videos} type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
-                        {showPlayButton && (
-                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
-                            </button>
-                        )}
-                    </div>
-                    <div className='relative'>
-                        <video id='videoPlayer' poster={london_thumbnail} className='rounded-3xl w-full' controls={false}>
-                            <source src={videos} type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
-                        {showPlayButton && (
-                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={playVideo}>
-                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
-                            </button>
-                        )}
-                    </div>
+
                 </Slider>
             </div>
         </div>

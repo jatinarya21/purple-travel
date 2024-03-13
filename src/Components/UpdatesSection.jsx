@@ -22,7 +22,7 @@ const UpdatesSection = () => {
                 </div>
                 <div className='flex flex-wrap justify-center items-center pt-5 md:pt-[52px] gap-0 lg:gap-6'>
                     <div className='sm:w-[47%] xl:w-[40%] md:ml-9 lg:ml-0 '>
-                        <img className='rounded-3xl h-[507px] w-[460px] md:ml-14 xl:ml-14' height={507} width={460} src={UpdatesMountainRiver} alt="Mountain-and-river" />
+                        <img className='rounded-3xl h-[507px] w-[460px] lg:ml-14  xl:ml-0' height={507} width={460} src={UpdatesMountainRiver} alt="Mountain-and-river" />
                     </div>
                     <div className='sm:w-[47%] xl:w-[23%] flex md:pt-0 pt-5 justify-center '>
                         <img className='rounded-3xl w-[314px] sm:w-[267px] h-[507px]' height={507} width={267} src={UpdatesTreeSun} alt="SunriseTree" />
