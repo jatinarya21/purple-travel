@@ -14,7 +14,7 @@ const EasyAndFast = () => {
             </span>
             <div className="container mx-auto px-3 md:px-20.5 relative z-[1]">
                 <span className='absolute right-0 -top-24 sm:-top-20 md:-top-28'><EasyAndFastAeroplane /></span>
-                <p className='text-secondary font-jakarta font-bold text-xl text-center uppercase tracking-[4px]'>Easy and Fast</p>
+                <p className='text-secondary font-jakarta font-bold text-xl text-center uppercase tracking-[5px]'>Easy and Fast</p>
                 <h1 className='font-jakarta sm:text-3xl md:text-5.5xl text-center font-bold mt-3.5'>Choose Tour & Travel Types</h1>
                 <div className="flex flex-wrap xl:gap-6 pt-4 md:pt-10 xl:pt-14">
                     <div className='w-full sm:w-6/12 mt-4 md:mt-0 lg:mt-4 lg:px-3 xl:px-0 xl:mt-0 xl:w-[23.4%]'>

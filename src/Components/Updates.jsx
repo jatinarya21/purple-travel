@@ -22,15 +22,15 @@ const UpdatesSection = () => {
                 </div>
                 <div className='flex flex-wrap justify-center items-center pt-5 md:pt-[52px] gap-0 lg:gap-6'>
                     <div className='sm:w-[47%] xl:w-[40%] md:ml-9 lg:ml-0 '>
-                        <img className='rounded-3xl h-[507px] w-[460px] lg:ml-14  xl:ml-0' height={507} width={460} src={UpdatesMountainRiver} alt="Mountain-and-river" />
+                        <img className='rounded-3xl h-[507px]  cursor-pointer transition-all hover:scale-95 w-[460px] lg:ml-14  xl:ml-0' height={507} width={460} src={UpdatesMountainRiver} alt="Mountain-and-river" />
                     </div>
                     <div className='sm:w-[47%] xl:w-[23%] flex md:pt-0 pt-5 justify-center '>
-                        <img className='rounded-3xl w-[314px] sm:w-[267px] h-[507px]' height={507} width={267} src={UpdatesTreeSun} alt="SunriseTree" />
+                        <img className='rounded-3xl w-[314px]  cursor-pointer transition-all hover:scale-95 sm:w-[267px] h-[507px]' height={507} width={267} src={UpdatesTreeSun} alt="SunriseTree" />
                     </div>
                     <div className='w-[100%] xl:w-[32%] pt-5 md:pt-0 flex justify-start items-start md:justify-center md:ml-5 lg:ml-0 md:mt-8 lg:mt-0 '>
                         <div className='flex flex-col sm:flex-row gap-5 xl:gap-6 xl:flex-col'>
-                            <div className="md:w-[47%] lg:w-full"><img className='rounded-3xl h-[240px] w-[330px] lg:w-[365px]' width={365} height={240} src={UpdatesBeachCity} alt="City-near-beach" /></div>
-                            <div className="md:w-[47%] lg:w-full"><img className='rounded-3xl h-[240px]  w-[330px] lg:w-[365px]' width={365} height={240} src={UpdatesMountainRiverSun} alt="river-near-mountain" /></div>
+                            <div className="md:w-[47%] lg:w-full cursor-pointer transition-all hover:scale-95 "><img className='rounded-3xl h-[240px] w-[330px] lg:w-[365px]' width={365} height={240} src={UpdatesBeachCity} alt="City-near-beach" /></div>
+                            <div className="md:w-[47%] lg:w-full cursor-pointer transition-all hover:scale-95 "><img className='rounded-3xl h-[240px]  w-[330px] lg:w-[365px]' width={365} height={240} src={UpdatesMountainRiverSun} alt="river-near-mountain" /></div>
                         </div>
                     </div>
                 </div>
