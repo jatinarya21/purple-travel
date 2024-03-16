@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import videos from '../Assets/videos/video-1.mp4';
 import london_thumbnail from '../Assets/Images/webp/top-destination-london-slider-image.webp';
@@ -7,19 +7,30 @@ import play_btn from '../Assets/Images/webp/video-player-play-btn.png'
 import { PurpleStar, PinkStar } from './common/Icons';
 
 const TopDestinationSlider = () => {
-    const [showPlayButton, setShowPlayButton] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [controlsVisible, setControlsVisible] = useState(false);
+    const videoRef = useRef(null);
 
-    const togglePlayButton = () => {
-        setShowPlayButton(!showPlayButton);
+    const toggleVideo = () => {
+        const videoElement = videoRef.current;
+        if (videoElement) {
+            if (!isPlaying) {
+                videoElement.play();
+            } else {
+                videoElement.pause();
+            }
+            setIsPlaying(!isPlaying);
+        }
     };
 
-    const playVideo = (videoId) => {
-        const videoPlayer = document.getElementById(videoId);
-        if (videoPlayer.paused) {
-            videoPlayer.play();
-        } else {
-            videoPlayer.pause();
-        }
+    const handlePlay = () => {
+        setIsPlaying(true);
+        setControlsVisible(true);
+    };
+
+    const handlePause = () => {
+        setIsPlaying(false);
+        setControlsVisible(false);
     };
 
     function SampleNextArrow(props) {
@@ -79,27 +90,78 @@ const TopDestinationSlider = () => {
                 </div>
                 <Slider {...settings} className='py-5 md:py-12  xl:pt-[57px]'>
                     <div className='relative'>
-                        <video id='videoPlayer1' poster={london_thumbnail} className='rounded-3xl w-full' controls={true}>
-                            <source src={videos} type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
-                        {showPlayButton && (
-                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={() => playVideo('videoPlayer1')}>
-                                {showPlayButton ? (<img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />) : (<img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={pause_btn} alt="video-player-btn" />)}
-                            </button>
+                        <video
+                            loop
+                            poster={london_thumbnail}
+                            className="rounded-[10px] "
+                            src={videos}
+                            id="videoElement"
+                            ref={videoRef}
+                            onPlay={handlePlay}
+                            onPause={handlePause}
+                            controls={controlsVisible}
+                        ></video>
+                        {!isPlaying && (
+                            <div>
+                                <button onClick={toggleVideo}>
+                                    <img
+                                        className="absolute top-[46%] sm:left-[46%] left-[43%] lg:w-[90px] sm:w-[60px]  lg:h-[90px] w-[45px] cursor-pointer z-30"
+                                        src={play_btn}
+                                        alt="play"
+                                    />
+                                </button>
+                            </div>
                         )}
                     </div>
                     <div className='relative'>
-                        <video id='videoPlayer2' poster={london_thumbnail} className='rounded-3xl w-full' controls={true}>
-                            <source src={videos} type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
-                        {showPlayButton && (
-                            <button className='bg-primary text-black translate-x-[-50%] translate-y-[-50%] outline-none rounded-full absolute left-2/4 top-2/4' onClick={() => playVideo('videoPlayer2')}>
-                                <img width={130} height={130} className='w-[40px] sm:w-[70px]  lg:h-[130px] lg:w-[130px]' src={play_btn} alt="video-player-btn" />
-                            </button>
+                        <video
+                            loop
+                            poster={london_thumbnail}
+                            className="rounded-[10px] "
+                            src={videos}
+                            id="videoElement"
+                            ref={videoRef}
+                            onPlay={handlePlay}
+                            onPause={handlePause}
+                            controls={controlsVisible}
+                        ></video>
+                        {!isPlaying && (
+                            <div>
+                                <button onClick={toggleVideo}>
+                                    <img
+                                        className="absolute top-[46%] sm:left-[46%] left-[43%] lg:w-[90px] sm:w-[60px]  lg:h-[90px] w-[45px] cursor-pointer z-30"
+                                        src={play_btn}
+                                        alt="play"
+                                    />
+                                </button>
+                            </div>
                         )}
                     </div>
+                    <div className='relative'>
+                        <video
+                            loop
+                            poster={london_thumbnail}
+                            className="rounded-[10px] "
+                            src={videos}
+                            id="videoElement"
+                            ref={videoRef}
+                            onPlay={handlePlay}
+                            onPause={handlePause}
+                            controls={controlsVisible}
+                        ></video>
+                        {!isPlaying && (
+                            <div>
+                                <button onClick={toggleVideo}>
+                                    <img
+                                        className="absolute top-[46%] sm:left-[46%] left-[43%] lg:w-[90px] sm:w-[60px]  lg:h-[90px] w-[45px] cursor-pointer z-30"
+                                        src={play_btn}
+                                        alt="play"
+                                    />
+                                </button>
+                            </div>
+                        )}
+                    </div>
+
 
                 </Slider>
             </div>
