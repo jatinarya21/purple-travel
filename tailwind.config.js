@@ -8,7 +8,8 @@ module.exports = {
       fontFamily: {
         jakarta: ['Plus Jakarta Sans', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
-        lato: ['Lato', 'sans-serif']
+        lato: ['Lato', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       height: {
         '1': ['1px'],

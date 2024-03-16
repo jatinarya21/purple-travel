@@ -34,7 +34,7 @@ const HeroSection = () => {
                     </a>
                     {/* nav links */}
                     <div className='flex lg:gap-12 xl:gap-32 2xl:gap-0 justify-between 2xl:w-[62%]'>
-                        <ul className={`${show ? "left_0" : ""} flex flex-col items-center justify-center z-10 w-full bg-white text-black fixed top-0 -left-full min-h-screen  gap-6 transition-all duration-500 md:flex-row md:bg-inherit md:text-black md:static md:w-auto md:min-h-full `}>
+                        <ul className={`${show ? "left_0" : ""} flex flex-col items-center justify-center z-10 w-full bg-white text-black fixed top-0 -left-full min-h-screen  gap-6 transition-all duration-500 lg:flex-row lg:bg-inherit lg:text-black lg:static lg:w-auto lg:min-h-full `}>
                             <li><a className='nav-links' onClick={() => setShow(!show)} href="#home">Home</a></li>
                             <li><a className='nav-links' onClick={() => setShow(!show)} href="#destinations">Destinations</a></li>
                             <li><a className='nav-links' onClick={() => setShow(!show)} href="#WhyChooseUs">Why choose us</a></li>
@@ -43,7 +43,7 @@ const HeroSection = () => {
                             <a className='font-jakarta font-bold text-base leading-5 py-3.5 px-7.5 bg-purple_custom border-2 transition-all border-[#872BFF]  hover:bg-transparent hover:text-[#872BFF] rounded-3xl text-white lg:hidden' href="#">Sign Up</a>
                         </ul>
                         {/* nav bar button */}
-                        <a onClick={() => setShow(!show)} className='z-10  md:hidden ' href="#">{show ? <div className=''>
+                        <a onClick={() => setShow(!show)} className='z-10  lg:hidden ' href="#">{show ? <div className=''>
                             <span className='bg-black h-1.1 w-6 flex mt-0 rotate-[60deg] transition-all'></span>
                             <span className='bg-black h-1.1 w-6 flex mt-0 rotate-[120deg] transition-all'></span>
                         </div> : <div> <span className='bg-black h-1 w-6 flex mt-1 transition-all' ></span>
@@ -60,7 +60,7 @@ const HeroSection = () => {
                         <HeaderDottedAeroplane />
                     </div>
                     <div className='flex  justify-center '>
-                        <h1 className='font-jakarta font-bold text-xl sm:text-3xl md:text-4xl lg:text-6xl text-center lg:!leading-[80.6px] w-[80%] sm:w-[50%] lg:w-[60%] xl:w-[50%]'>From Southeast Asia <span className='text-secondary'>To The World</span></h1>
+                        <h1 className='font-jakarta font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-center xl:!leading-[80.6px] w-[80%] sm:w-[50%] lg:w-[50%] xl:w-[57%]'>From Southeast Asia <span className='text-secondary'>To The World</span></h1>
                     </div>
                     <div className="flex flex-wrap gap-5 xl:gap-0 justify-center items-center pt-12 relative">
                         <span className='absolute right-0 top-0'><PurpleStar /></span>
@@ -69,7 +69,7 @@ const HeroSection = () => {
                             <img width={171} height={186} className='rounded-lg' src={hero_mountain_img} alt="mountains-img" />
                         </div>
                         <div className='w-5/12 sm:w-3/12 md:w-1.5/12 xl:w-2/12 hidden sm:block'>
-                            <div className='flex flex-col items-end xl:mr-2 gap-5'>
+                            <div className='flex flex-col items-end xl:mr-2 gap-4 xl:gap-9'>
                                 <img width={171} height={186} className='rounded-lg' src={hero_waterfall_mountain} alt="waterfall-and-mountains" />
                                 <img width={171} height={186} className='rounded-lg' src={hero_waterfall} alt="waterfall-img" />
                             </div>
@@ -91,7 +91,7 @@ const HeroSection = () => {
                                     </defs>
 
                                     <text width="400">
-                                        <textPath alignment-baseline="top" href="#circle" class="text-lg tracking-[5px] font-semibold font-inter">
+                                        <textPath alignment-baseline="middle" href="#circle" class="text-lg tracking-[5px] font-semibold font-inter">
                                             TRAVELING FOR THE FUTURE MAKE
                                         </textPath>
                                     </text>
@@ -100,7 +100,7 @@ const HeroSection = () => {
                             <img className='rounded-3xl' width={370} height={466} src={hero_lady_in_boat} alt="lady-in-boat" />
                         </div>
                         <div className='w-5/12 sm:w-7/12 md:w-1.5/12 xl:w-2/12 sm:hidden  md:block'>
-                            <div className='flex flex-row md:flex-col justify-around xl:ml-2  gap-4 md:gap-5'>
+                            <div className='flex flex-row md:flex-col justify-around xl:ml-2  gap-4 xl:gap-9'>
                                 <img width={171} height={186} className='rounded-lg' src={hero_tree_rocky_mountains} alt="tree-under-rocky-mountains" />
                                 <img width={171} height={186} className='rounded-lg' src={hero_couple_near_river} alt="couple-near-river-mountains" />
                             </div>

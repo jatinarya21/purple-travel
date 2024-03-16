@@ -10,27 +10,27 @@ import { ChooseUsCardHeart, ChooseUsCardLeaf, ChooseUsCardLocation, ChooseUsCard
 const WhyChooseUS = () => {
     return (
         <div id='WhyChooseUs' className='pb-12 xl:pb-[120px] relative'>
-            <span className='absolute left-0  top-56 md:top-72 md:left-3'>
+            <span className='absolute left-0  top-60 md:top-80 lg:top-72 md:left-3'>
                 <PinkStar />
             </span>
             <div className='container mx-auto px-3 lg:px-20.5 2xl:px-44'>
                 <div className="flex flex-wrap justify-center items-center lg:justify-between">
-                    <div className="lg:w-5/12">
+                    <div className="lg:w-5/12 flex flex-col items-center">
                         <h2 className='text-secondary font-jakarta font-bold text-xl uppercase  tracking-[5px] text-center lg:text-start'>Why Choose Us</h2>
-                        <p className='font-jakarta font-bold text-xl md:text-4xl !leading-[55.4px]  xl:text-5.5xl pt-1 md:pt-3.5 text-center lg:text-start'>Book Your Next Trip In 3 Easy  Steps</p>
+                        <p className='font-jakarta font-bold text-xl md:text-4xl lg:!leading-[55.4px]  xl:text-5.5xl pt-1 md:pt-3.5 md:w-[50%] lg:w-[95%] xl:w-[90%] text-center lg:text-start'>Book Your Next Trip In 3 Easy Steps</p>
                         <div className='flex flex-col gap-6 pt-2  md:pt-8'>
                             <div className='flex gap-[18px]'>
                                 <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsLocationIcon} alt="location-icon" />
                                 <div className='flex flex-col'>
                                     <h3 className='font-jakarta text-black font-bold text-lg md:text-2xl'>Choose Destination</h3>
-                                    <p className='font-inter text-base font-normal text-black pr-2'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
+                                    <p className='font-inter text-sm sm:text-base font-normal text-black w-full md:w-[65%]  lg:w-full '>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
                                 </div>
                             </div>
                             <div className='flex gap-[18px]'>
                                 <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsCreditCardIcon} alt="credit-card-icon" />
                                 <div className='flex flex-col'>
                                     <h3 className='font-jakarta text-black font-bold text-lg md:text-2xl'>Make Payment</h3>
-                                    <p className='font-inter text-base font-normal text-black pr-2'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
+                                    <p className='font-inter text-sm sm:text-base font-normal text-black w-full md:w-[65%]  lg:w-full '>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
                                 </div>
 
                             </div>
@@ -38,7 +38,7 @@ const WhyChooseUS = () => {
                                 <img width={70} height={70} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={ChooseUsAeroplaneIcon} alt="DottedAeroplane" />
                                 <div className='flex flex-col'>
                                     <h3 className='font-jakarta text-black font-bold text-lg md:text-2xl'>Reach Airport on Selected Date</h3>
-                                    <p className='font-inter text-base font-normal text-black pr-2'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
+                                    <p className='font-inter text-sm sm:text-base font-normal text-black w-full md:w-[65%]  lg:w-full '>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor.</p>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const WhyChooseUS = () => {
                                     </div>
                                     <ChooseUsCardHeart />
                                 </div>
-                                <div className='flex gap-2.5 rounded-xl items-center p-[17px] relative mt-6 top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
+                                <div className='flex gap-2.5 rounded-xl items-center p-[17px] relative bg-white mt-6 top-5 right-0 sm:absolute sm:top-1 sm:-right-24 shadow-[0px_4px_16px_0px_#00000018]'>
                                     <img width={49} height={49} src={ChooseUsCardEllipse} alt="ProfilePic" />
                                     <div className='flex flex-col'>
                                         <p className='font-inter font-normal text-xs text-black'>Ongoing</p>

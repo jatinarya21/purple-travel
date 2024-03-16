@@ -37,8 +37,8 @@ const OurExperience = () => {
                     </div>
                     <div className='lg:w-[45%] pt-6 md:pt-[53px]'>
                         <p className='text-secondary font-jakarta font-bold text-xl text-center lg:text-start tracking-[5px] uppercase'>our experience</p>
-                        <h3 className='font-jakarta text-black font-bold md:mt-3.5 text-center lg:text-start text-2xl md:text-5.5xl leading-[130%]'>Open the Door to Your Dream Destination</h3>
-                        <p className='font-inter font-normal text-base pt-4 px-9 md:px-0  text-center lg:text-start'>Vitae mauris purus dui cras non quis morbi aliquet. Arcu porttitor ullamcorper ultrices arcu adipiscing pulvinar vel. Interdum quisque tempus non eu magna semper nulla. Vitae convallis enim amet non nec ac lectus aliquam. Pharetra sed sapien in est fringilla. </p>
+                        <h3 className='font-jakarta text-black font-bold md:mt-3.5 text-center lg:text-start text-2xl  md:text-4xl md:leading-[45px] lg:text-4xl xl:text-5.5xl lg:leading-[130%]'>Open the Door to Your <br /> Dream Destination</h3>
+                        <p className='font-inter font-normal text-base pt-4 px-9 md:px-10 lg:px-0 text-center lg:text-start'>Vitae mauris purus dui cras non quis morbi aliquet. Arcu porttitor ullamcorper ultrices arcu adipiscing pulvinar vel. Interdum quisque tempus non eu magna semper nulla. Vitae convallis enim amet non nec ac lectus aliquam. Pharetra sed sapien in est fringilla. </p>
                         <div className='flex flex-wrap lg:flex-nowrap gap-2 md:gap-[51px] items-center justify-center mt-5'>
                             <div className='flex flex-col items-center md:items-start'>
                                 <p className='gradient-text font-lato text-3xl md:text-[40px] font-bold'>{counter1}K+</p>

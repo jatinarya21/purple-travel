@@ -27,10 +27,8 @@ function App() {
       <UpdatesSection />
       <Testimonials />
       <OurExperience />
-      {/* <FaqSection/> */}
       <AccordionItem />
       <FooterSection />
-      {/* <SpecialOffersMailCard/> */}
     </div>
   );
 }
