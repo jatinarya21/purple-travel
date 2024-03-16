@@ -78,11 +78,11 @@ const TopDestinationSlider = () => {
             <span className='absolute right-0 md:right-9 top-12'>
                 <PinkStar />
             </span>
-            <div className='container mx-auto px-8 lg:px-18 2xl:px-44  pb-3 xl:pb-[120px]'>
+            <div className='container mx-auto px-8 md:px-20.5 2xl:px-44  pb-3 xl:pb-[120px]'>
                 <div className='flex flex-col lg:flex-row flex-wrap justify-between items-center'>
                     <div className='lg:w-6/12  xl:w-[48%]'>
-                        <h3 className='text-secondary font-jakarta font-bold tracking-[4px] text-lg sm:text-xl text-center lg:text-start mb-3.5'>TOP DESTINATION</h3>
-                        <h2 className='font-jakarta font-bold text-xl sm:text-3xl xl:text-5.5xl text-center lg:text-start capitalize'>Explore top destination</h2>
+                        <h3 className='text-secondary font-jakarta font-bold tracking-[4px] text-base sm:text-xl text-center lg:text-start md:mb-3.5'>TOP DESTINATION</h3>
+                        <h2 className='font-jakarta font-bold min-[576px]:text-4xl text-2xl sm:text-3xl xl:text-5.5xl text-center lg:text-start capitalize'>Explore top destination</h2>
                     </div>
                     <div className='lg:w-6/12 xl:w-5/12 flex justify-end'>
                         <p className='font-inter text-sm sm:text-base font-normal py-2.5 max-w-[400px] text-center lg:text-start'>Pellentesque mauris enim blandit amet. Et tincidunt et semper hac venenatis dolor. Non eu arcu turpis molestie. Et integer eu malesuada quisque. </p>

@@ -42,14 +42,20 @@ const Testimonials = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 1
+                    initialSlide: 1,
+                    autoplay: true,
+                    speed: 2000,
+                    autoplaySpeed: 2000,
                 }
             },
             {
                 breakpoint: 765,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    speed: 2000,
+                    autoplaySpeed: 2000,
                 }
             }
         ]
@@ -60,10 +66,10 @@ const Testimonials = () => {
         <div id='testimonials' className='pb-16 pt-12 xl:py-[120px] relative'>
             <span className='absolute right-10  md:top-28 lg:top-36 xl:top-36'><PurpleStar /></span>
             <div className="container mx-auto px-3 lg:px-20.5 2xl:px-40">
-                <h3 className='text-secondary font-jakarta text-xl uppercase font-bold tracking-[5px] text-center'>Testimonials</h3>
-                <p className='text-center text-black font-jakarta font-bold text-xl md:text-5.5xl mt-3.5'>What Our Customers Say</p>
-                <div className='testimonial-slider mt-[52px]'>
-                    <Slider  {...settings}>
+                <h3 className='text-secondary font-jakarta text-base sm:text-xl uppercase font-bold tracking-[5px] text-center'>Testimonials</h3>
+                <p className='text-center text-black font-jakarta font-bold text-2xl md:text-5.5xl md:mt-3.5'>What Our Customers Say</p>
+                <div className='testimonial-slider '>
+                    <Slider className=''  {...settings}>
                         <div >
                             <div className='shadow-[0px_4px_16px_0px_#00000018] rounded-3xl w-[280px] sm:w-[364px] h-[350px] p-5 testimonial-box'>
                                 <RatingStars />
